@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 0;
+  background-color: var(--Light-grayish-blue);
+}
+
+main {
+  margin: 60px 20px 20px;
+}
+
+h1 {
+  color: var(--Light-grayish-blue);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-right: 54px;
+}
+
+h2 {
+  color: var(--Light-grayish-blue);
+  margin: 0;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+p {
+  color: var(--Light-gray);
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+}
+
+
+.dainelBox {
+  background-color: var(--Moderate-violet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-size: 33%;
+}
+
+.dainelBox p,
+.jeanetteBox p {
+  padding-right: 57px;
+}
+
+.jonathanBox {
+  background-color: var(--Very-dark-grayish-blue);
+}
+
+.jonathanBox p {
+  padding-right: 30px;
+}
+
+.jeanetteBox {
+  background-color: var(--White);
+    box-shadow: 5px 25px 40px -40px var( --Very-dark-grayish-blue);
+}
+
+.patrickBox {
+  background-color: var(--Very-dark-blackish-blue);
+}
+
+.patrickBox p {
+  padding-right: 43px;
+    box-shadow: 5px 25px 40px -40px var( --Very-dark-grayish-blue);
+
+}
+
+.kiraBox {
+  background-color: var(--White);
+  box-shadow: 5px 25px 40px -40px var( --Very-dark-grayish-blue);
+}
+
+.kiraBox p {
+  padding-right: 44px;
+}
+
+.colorFhead {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.personBox {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 30px 0px 40px 30px;
+}
+
+.pfpBox {
+  display: flex;
+}
+
+
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid var(--Light-gray);
+}
+
+.pfpText {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 62.5rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  h1{
+    padding-right: 40px;
+  }
+
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .personBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .dainelBox {
+    grid-column: span 2;
+  }
+
+  .patrickBox {
+    grid-column: span 2;
+  }
+
+  .kiraBox {
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+
+
+  .dainelBox p {
+    padding-right: 24px;
+  }
+
+  .jeanetteBox p {
+    padding-right: 35px;
+  }
+
+  .patrickBox p {
+    padding-right: 30px;
+  }
+
+  .kiraBox p {
+    padding-right: 31px;
+  }
+}
