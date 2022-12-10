@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/Osauyi/testimonials-grid-section-main--26.git]
+- Live Site URL: [https://osauyi.github.io/testimonials-grid-section-main--26/]
 
 ## My process
 
